@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start":"node server",
-    "server":"nodemon server"
+    "start": "node server",
+    "server": "nodemon server",
+    "ngrok": "ngrok http 2222",
+    "kill": "kill $(lsof -t -i:2222)"
   },
   "author": "<pakaphon23@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@line/bot-sdk": "^6.8.2",
+    "body-parser": "^1.19.0",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
+    "firebase-admin": "^8.3.0",
     "ngrok": "^3.2.4",
     "nodemon": "^1.19.1"
   }
